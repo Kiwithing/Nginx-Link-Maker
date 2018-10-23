@@ -54,7 +54,17 @@ else
         echo "$defaultsbfile does not exist."
         exit 1;
 
-    fi 
+    fi
+    
+    #Restart server?
+    echo 'Restart Nginx? (yes/no)'
+    read -r restartstatus
+
+    if [ "$restartstatus" = "yes" ]; then
+        #test config
+        nginx -t
+        systemctl restart nginx
+    fi
 
     echo "Project successfully created in $(tput setaf 3)$htdocs$projectname$(tput sgr0)\n"
     echo "http://frontend.$projectname.example.com\n"
