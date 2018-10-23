@@ -13,7 +13,7 @@ This script assumes your Nginx folder is set up at `/etc/nginx/` folder and webs
 
 ## TODO List
 
-  - [] Clean up code
-  - [] Add a `breaklinks.sh` script to remove folders and disable Nginx sites
-  - [] Adding a prompt to restart Nginx
-  - [] Some failsafe measures
+  - [ ] Clean up code
+  - [ ] Add a `breaklinks.sh` script to remove folders and disable Nginx sites
+  - [ ] Adding a prompt to restart Nginx
+  - [ ] Some failsafe measures
